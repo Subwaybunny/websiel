@@ -1,0 +1,285 @@
+body
+{
+	background-color:#ffffff;
+	color:#000000;
+	font-family:sans-serif;	
+}
+@font-face
+{
+	font-family:parisine;
+	src:url(parisine.otf);
+}
+@font-face
+{
+	font-family:sieldigits;
+	src:url(sieldigits.ttf);
+}
+hr {
+	color:#222222;
+	background-color:#222222;
+	position:absolute;
+	top:135px;
+	left:50%;
+	margin-left:-320px;
+	height:3px;
+	width:640px;
+}
+#siel {
+	position:absolute;
+	top:25%;
+	left:50%;
+	margin-left:-330px;
+	margin-top:-140px;
+	width:660px;
+	height:300px;
+	background: linear-gradient(320deg, #e0e0e0, #eaeaea, #ffffff);
+	box-shadow: inset -5px -5px 20px #666666;
+}
+#sieloverlay {
+	position:absolute;
+	top:25%;
+	left:50%;
+	margin-left:-330px;
+	margin-top:-140px;
+	width:660px;
+	height:300px;
+	background-color:rgba(0,0,0,0);
+}
+#line {
+	position:absolute;
+	top:15px;
+	left:15px;
+}
+#bordereau {
+	position:absolute;
+	bottom:0;
+	left:0;
+	height:46px;
+	width:510px;
+	font-family:parisine;
+	font-size:2.5em;
+	text-align:center;
+	color:#7e7e7e;
+	background-color:#cecece;
+	box-shadow: inset 0 -5px 20px #666666;
+}
+#logo {
+	position:absolute;
+	bottom:0;
+	right:0;
+	height:46px;
+	width:150px;
+	background-image:url(img/logo.png);
+	background-repeat:no-repeat;
+}
+#direction {
+	position:absolute;
+	top:150px;
+	left:15px;
+	font-family:parisine;
+	color:#003f90;
+}
+#clock {
+	position:absolute;
+	top:25px;
+	right:40px;
+	width:120px;
+	height:40px;
+	border:1px solid black;
+	font-family:sieldigits;
+	background-color:black;
+	background-image:url(img/clockbkg.gif);
+	background-repeat:no-repeat;
+}
+.clockdigit {
+	font-size:2em;
+	color:#fff83e;
+}
+.trains {
+	position:absolute;
+	top:105px;
+	font-family:parisine;
+	font-size:1.5em;
+	color:#444444;
+}
+#nextserv {
+	font-family:sieldigits;
+	font-size:3.5em;
+}
+#first {
+	background-color:black;
+	color:#fff83e;
+	position:absolute;
+	left:340px;
+	width:85px;
+	height:55px;
+	padding-left:6px;
+	padding-bottom:5px;
+}
+#sec {
+	background-color:black;
+	color:#fff83e;
+	position:absolute;
+	left:500px;
+	width:85px;
+	height:55px;
+	padding-left:6px;
+	padding-bottom:5px;
+}
+#third {
+	background-color:black;
+	color:#fff83e;
+	position:absolute;
+	left:340px;
+	width:85px;
+	height:55px;
+	padding-left:6px;
+	padding-bottom:5px;
+}
+#fourth {
+	background-color:black;
+	color:#fff83e;
+	position:absolute;
+	left:500px;
+	width:85px;
+	height:55px;
+	padding-left:6px;
+	padding-bottom:5px;
+}
+.min {
+	background-color:black;
+	position:absolute;
+	font-family:Arial;
+	font-size:0.6em;
+	top:52%;
+	width:55px;
+	height:55px;
+	color:white;
+	padding-bottom:5px;
+}
+#reg {
+	position:absolute;
+	top:100px;
+	left:80px;
+	width:350px;
+	height:150px;
+	transform:rotate(330deg);
+	background-repeat:no-repeat;
+	background-image:url(img/reglage.jpg);
+}
+#stationsign {
+    width: auto;
+    font-family: parisine;
+    font-size: 2em;
+    padding: 50px;
+	background:linear-gradient(#0000CC,#000066)
+}
+#audiocontrol {
+	position:absolute;
+	top:10px;
+	right:10px;
+	height:100px;
+	width:100px;
+}
+#linecontainer {
+	position:absolute;
+	left:0;
+	margin-left:-80px;
+	height:180px;
+	width:auto;
+	padding-top:5px;
+}
+#directioncontainer {
+	position:absolute;
+	right:370px;
+	width:280px;
+	height:180px;
+}
+#stationcontainer {
+	position:absolute;
+	right:0;
+	margin-right:-80px;
+	width:370px;
+	height:180px;
+}
+#stationsigncontainer {
+	position:absolute;
+	top:0;
+	width:100%;
+	height:auto;
+	z-index:-1;
+}
+#dir1 {
+	position:absolute;
+	top:0;
+	width:280px;
+	height:90px;
+	margin:0;
+	padding:0;
+	background:linear-gradient(#bebebe, white);
+	color:black;
+	font-family:parisine;
+	font-size:2em;
+	text-align:center;
+}
+#dir2 {
+	position:absolute;
+	bottom:0;
+	width:280px;
+	height:90px;
+	margin:0;
+	padding:0;
+	background:linear-gradient(white, #bebebe);
+	color:black;
+	font-family:parisine;
+	font-size:2em;
+	text-align:center;
+}
+#stationchoice {
+	position:absolute;
+	top:50%;
+	margin-top:-40px;
+	width:370px;
+	height:80px;
+	font-family:parisine;
+	font-size:1.5em;
+	text-align:center;
+	background:linear-gradient(#0000CC, #000066);
+	color:white;
+}
+#stationchoice option {
+	background:linear-gradient(#0000CC,#000066);
+}
+#reset {
+	position:absolute;
+	top:0;
+	left:0;
+	background:linear-gradient(#666666, #000000);
+	color:white;
+	height:40px;
+	width:175px;
+	font-family:parisine;
+	font-size:1.2em;
+}
+#userpanelcontainer {
+	position:absolute;
+	bottom:0;
+	left:0;
+	height:300px;
+	width:100%;
+	background:linear-gradient(#FFFFFF, #151515);
+}
+#userpanel{
+	position:absolute;
+	bottom:50px;
+	left:50%;
+	margin-left:-450px;
+	width:900px;
+	height:200px;
+}
+@keyframes blink1 {
+	0% {color:#fff83e;}
+	49% {color:#fff83e;}
+	50% {color:#000000;}
+	99% {color:#000000;}
+}
