@@ -66,7 +66,7 @@ function check_terminus($string){
 	else if (strpos($string,'SERVICENONCOMMENCE') !== false)
 		$terminus = "N";
 	else
-		$terminus = "INFO INDISPO";
+		$terminus = "I";
 	return $terminus;
 }
 

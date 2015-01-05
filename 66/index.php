@@ -84,8 +84,10 @@ function refpage(){
 			$('#terminus1').html("OPERA");
 		else if (terminus1 == "S")
 			$('#terminus1').html("SAINT-LAZARE");
-		else
-			$('#terminus1').html("INFO INDISPO");
+		else{
+			$('#terminus1').html("INFO INDISPO.");
+			$('#wait1').html("");
+			}
 			
 		if (terminus2 == "O")
 			$('#terminus2').html("OPERA");
@@ -99,8 +101,11 @@ function refpage(){
 			$('#terminus2').html("PREMIER PASSAGE");
 			$('#wait2').html("");
 		}
-		else
-			$('#terminus2').html("INFO INDISPO");
+		else{
+			$('#terminus2').html("INFO INDISPO.");
+			$('#wait2').html("");
+			}
+			
 	}
 	if (terminus1 == "T"){
 		$('#terminus2').html("&nbspSERVICE TERMINE");
