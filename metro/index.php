@@ -38,7 +38,7 @@ if ($_SESSION['audio'] == "on"){
 <script src="siel.js"></script>
 
 <script>
-if (window.location.pathname == '/index.php') {
+if (window.location.pathname == '/ws/index.php') {
 	var voicebuffer = null;
 	var alreadyone = false;
 	var currentfirst = null;

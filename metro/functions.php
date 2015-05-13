@@ -22,19 +22,18 @@ function trimwebsource($tag, $html)
 
 	$array = array();
 	foreach($content as $node){
-    $array[] = $node;
+		$array[] = $node;
 	}
-	if (isset($array[0])){
+	if (isset($array[0]))
 		return $array[0]->nodeValue;
-	}
-	else{
-	return null;	
-	}
+	else
+		return null;
 }
 
 
 
-function process_rawstring($rawstring){
+function process_rawstring($rawstring)
+{
 	$rawstring = iconv('UTF-8', 'ASCII//TRANSLIT', $rawstring);
 	$rawstring = preg_replace("/Train a l'approche/", "TA", $rawstring);
 	$rawstring = preg_replace("/Train a quai/", "TQ", $rawstring);
@@ -68,73 +67,70 @@ function process_rawstring($rawstring){
 
 
 
-function getlinecolor($line){
+function getlinecolor($line)
+{
 	if ($line == "3b"){$line = 30;}
 	if ($line == "7b"){$line = 70;}
 	switch ($line)
 	{
 		case 1:
-			$color = "f2c931";
+			return "f2c931";
 			break;
 		case 2:
-			$color = "216eb4";
+			return "216eb4";
 			break;
 		case 3:
-			$color = "9a9940";
+			return "9a9940";
 			break;
 		case 30:
-			$color = "89c7d6";
+			return "89c7d6";
 			break;
 		case 4:
-			$color = "bb4d98";
+			return "bb4d98";
 			break;
 		case 5:
-			$color = "de8b53";
+			return "de8b53";
 			break;
 		case 6:
-			$color = "79bb92";
+			return "79bb92";
 			break;
 		case 7:
-			$color = "df9ab1";
+			return "df9ab1";
 			break;
 		case 70:
-			$color = "79bb92";
+			return "79bb92";
 			break;
 		case 8:
-			$color = "c5a3ca";
+			return "c5a3ca";
 			break;
 		case 9:
-			$color = "cdc83f";
+			return "cdc83f";
 			break;
 		case 10:
-			$color = "dfb039";
+			return "dfb039";
 			break;
 		case 11:
-			$color = "8e6538";
+			return "8e6538";
 			break;
 		case 12:
-			$color = "328e5b";
+			return "328e5b";
 			break;
 		case 13:	
-			$color = "89c7d6";
+			return "89c7d6";
 			break;
 		case 14:
-			$color = "67328e";
+			return "67328e";
 			break;
 	}
-	return $color;
 }
 
 
 
 function findterminus($line, $track){
-	if ($track == 1){
-		$terminus = findterminustrack1($line);
-		}
-	if ($track == 2){
-		$terminus = findterminustrack2($line);
-		}
-	return $terminus;
+	if ($track == 1)
+		return findterminustrack1($line);
+	if ($track == 2)
+		return findterminustrack2($line);
 }
 
 
@@ -145,57 +141,56 @@ function findterminustrack1($line){
 	switch ($line)
 	{
 		case 1:
-			$terminus = "La D&eacutefense";
+			return "La D&eacutefense";
 			break;
 		case 2:
-			$terminus = "Porte</br>Dauphine";
+			return "Porte</br>Dauphine";
 			break;
 		case 3:
-			$terminus = "Levallois";
+			return "Levallois";
 			break;
 		case 30:
-			$terminus = "Gambetta";
+			return "Gambetta";
 			break;
 		case 4:
-			$terminus = "Montrouge";
+			return "Montrouge";
 			break;
 		case 5:
-			$terminus = "Place d'Italie";
+			return "Place d'Italie";
 			break;
 		case 6:
-			$terminus = "&Eacutetoile";
+			return "&Eacutetoile";
 			break;
 		case 7:
-			$terminus = "Ivry</br>Villejuif";
+			return "Ivry</br>Villejuif";
 			break;
 		case 70:
-			$terminus = "Louis Blanc";
+			return "Louis Blanc";
 			break;
 		case 8:
-			$terminus = "Cr&eacuteteil";
+			return "Cr&eacuteteil";
 			break;
 		case 9:
-			$terminus = "Montreuil";
+			return "Montreuil";
 			break;
 		case 10:
-			$terminus = "Gare</br>d'Austerlitz";
+			return "Gare</br>d'Austerlitz";
 			break;
 		case 11:
-			$terminus = "Ch&acirctelet";
+			return "Ch&acirctelet";
 			break;
 		case 12:
-			$terminus = "Aubervilliers";
+			return "Aubervilliers";
 			break;
 		case 13:
-			$terminus = "Asni&egraveres</br>Gennevilliers";
+			return "Asni&egraveres</br>Gennevilliers";
 			break;
 		case 14:
-			$terminus = "Saint-Lazare";
+			return "Saint-Lazare";
 			break;
 		default:
-			$terminus = "";
+			return "";
 	}
-		return $terminus;
 }
 
 
@@ -206,91 +201,80 @@ function findterminustrack2($line){
 		switch ($line)
 	{
 		case 1:
-			$terminus = "Ch&acircteau</br>de Vincennes";
+			return "Ch&acircteau</br>de Vincennes";
 			break;
 		case 2:
-			$terminus = "Nation";
+			return "Nation";
 			break;
 		case 3:
-			$terminus = "Gallieni";
+			return "Gallieni";
 			break;
 		case 30:
-			$terminus = "Porte</br>des Lilas";
+			return "Porte</br>des Lilas";
 			break;
 		case 4:
-			$terminus = "Porte de</br>Clignancourt";
+			return "Porte de</br>Clignancourt";
 			break;
 		case 5:
-			$terminus = "Bobigny";
+			return "Bobigny";
 			break;
 		case 6:
-			$terminus = "Nation";
+			return "Nation";
 			break;
 		case 7:
-			$terminus = "La Courneuve";
+			return "La Courneuve";
 			break;
 		case 70:
-			$terminus = "Pr&eacute</br>Saint-Gervais";
+			return "Pr&eacute</br>Saint-Gervais";
 			break;
 		case 8:
-			$terminus = "Balard";
+			return "Balard";
 			break;
 		case 9:
-			$terminus = "Pont</br>de S&egravevres";
+			return "Pont</br>de S&egravevres";
 			break;
 		case 10:
-			$terminus = "Boulogne";
+			return "Boulogne";
 			break;
 		case 11:
-			$terminus = "Mairie</br>des Lilas";
+			return "Mairie</br>des Lilas";
 			break;
 		case 12:
-			$terminus = "Mairie d'Issy";
+			return "Mairie d'Issy";
 			break;
 		case 13:
-			$terminus = "Ch&acirctillon";
+			return "Ch&acirctillon";
 			break;
 		case 14:
-			$terminus = "Olympiades";
+			return "Olympiades";
 			break;
 		default:
-			$terminus = "";
+			return "";
 	}
-		return $terminus;
 }
 
 
 
-function prepare_request($line, $track, $station){
-	if ((checkline($line) != "OK") || ($track != 1 && $track != 2)){
+function prepare_request($line, $track, $station)
+{
+	if (!checkline($line) || ($track != 1 && $track != 2))
 		return "";
-	}
-		$station = formatstation($station);
-	if ($track == 1){
+	$station = formatstation($station);
+	if ($track == 1)
 		$track = "A";
-	}
-	if ($track == 2){
+	if ($track == 2)
 		$track = "R";
-	}
-	$request = "http://www.ratp.fr/horaires/fr/ratp/metro/prochains_passages/PP/{$station}/{$line}/{$track}";
-	return $request;
+	return "http://www.ratp.fr/horaires/fr/ratp/metro/prochains_passages/PP/{$station}/{$line}/{$track}";
 }
 
 
 
-function checkline($line){
-	if ($line == "3b"){
-		return "OK";
-	}
-	elseif ($line == "7b"){
-		return "OK";
-	}
-	elseif ($line >= 1 && $line <= 14){
-		return "OK";
-	}
-	else{
+function checkline($line)
+{
+	if ($line == "3b" || $line == "7b" || ($line >= 1 && $line <= 14))
+		return true;
+	else
 		return false;
-	}
 }
 
 
@@ -304,68 +288,57 @@ function formatstation($station){
 
 
 
-function check_valid_time($sieltime){
-	if (strlen($sieltime) != 2){
+function check_valid_time($sieltime)
+{
+	if (strlen($sieltime) != 2)
 		return false;
-	}
-	if (!is_numeric($sieltime)){
-		if (!sielexceptions($sieltime)){
+	if (!is_numeric($sieltime))
+		if (!sielexceptions($sieltime))
 			return false;
-		}
-	}
 	return true;
 }
 
 
 
-function sielexceptions($sieltime){
-	if ($sieltime == "++" || $sieltime == "--" || $sieltime == "__"){
+function sielexceptions($sieltime)
+{
+	if ($sieltime == "++" || $sieltime == "--" || $sieltime == "__")
 		return true;
-		}
-	if ($sieltime == ".." || $sieltime == "XX" || $sieltime == "##"){
+	if ($sieltime == ".." || $sieltime == "XX" || $sieltime == "##")
 		return true;
-		}
-	if ($sieltime == "TA" || $sieltime == "TQ"){
+	if ($sieltime == "TA" || $sieltime == "TQ")
 		return true;
-		}
-	else{
+	else
 		return false;
-	}
 }
 
 
 
-function terminussize($terminus){
+function terminussize($terminus)
+{
 	$length = strlen($terminus);
-	if (terminusexceptions($terminus)){
+	if (terminusexceptions($terminus))
 		$length -= 7;
-	}
-	if ($length <= 10){
+	if ($length <= 10)
 		return "3.5";
-	}
-	else if ($length > 10 && $length <= 14){
+	else if ($length > 10 && $length <= 14)
 		return "3.0";
-	}
-	else if ($length > 14 && $length <= 22){
+	else if ($length > 14 && $length <= 22)
 		return "2.8";
-	}
-	else{
+	else
 		return "2.5";
-	}
 }
 
 
 
-function terminusexceptions($terminus){
-	if ($terminus == "Ch&acircteau de Vincennes" || $terminus == "La D&eacutefense" || $terminus == "&Eacutetoile"){
+function terminusexceptions($terminus)
+{
+	if ($terminus == "Ch&acircteau de Vincennes" || $terminus == "La D&eacutefense" || $terminus == "&Eacutetoile")
 		return true;
-	}
-	if ($terminus == "Cr&eacuteteil" || $terminus == "Pont de S&egravevres" || $terminus == "Ch&acirctelet"){
+	if ($terminus == "Cr&eacuteteil" || $terminus == "Pont de S&egravevres" || $terminus == "Ch&acirctelet")
 		return true;
-	}
-	if ($terminus == "Asni&egraveres</br>Gennevilliers" || $terminus == "Ch&acirctillon"){
+	if ($terminus == "Asni&egraveres</br>Gennevilliers" || $terminus == "Ch&acirctillon")
 		return true;
-	}
 }
 
 
@@ -373,47 +346,44 @@ function terminusexceptions($terminus){
 function veilledefete()
 {
 	if (date('d') == "01" && date('m') == "01")
-		return 1;
+		return true;
 	if (date('d') == "01" && date('m') == "05")
-		return 1;
+		return true;
 	if (date('d') == "08" && date('m') == "05")
-		return 1;
+		return true;
 	if (date('d') == "14" && date('m') == "07")
-		return 1;
+		return true;
 	if (date('d') == "15" && date('m') == "08")
-		return 1;
+		return true;
 	if (date('d') == "01" && date('m') == "11")
-		return 1;
+		return true;
 	if (date('d') == "25" && date('m') == "12")
-		return 1;
-	return 0;
+		return true;
+	return false;
 }
 
 
 
-function servicetermine($hours, $minutes){
-	if (date('l') == "Saturday" || date('l') == "Sunday" || veilledefete() == 1){
+function servicetermine($hours, $minutes)
+{
+	if (date('l') == "Saturday" || date('l') == "Sunday" || veilledefete() == true)
 		if ($hours >= 2 && $hours < 5)
-			return 1;
-	}
-	else{
+			return true;
+	else
 		if ($hours >= 1 && $hours < 5)
-			return 1;
-	}
-	return 0;
+			return true;
+	return false;
 }
 
 
 
-function handleaction($action){
-	if ($action == "audio_off"){
+function handleaction($action)
+{
+	if ($action == "audio_off")
 		$_SESSION['audio'] = "off";
-	}
-	if ($action == "audio_on"){
+	if ($action == "audio_on")
 		$_SESSION['audio'] = "on";
-	}
-	if ($action == "changeline"){
+	if ($action == "changeline")
 		$_SESSION['station'] = null;
-	}
 }
 ?>
