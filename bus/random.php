@@ -29,7 +29,7 @@ session_start();
 
 <script>
 $(document).ready(function(){
-	for (i = 0; i < 5; i++)
+	for (i = 1; i < 5; i++)
 		if ($('#slot'+i).html() == "")
 			fillnew($('#slot'+i))
 	next = 0;
