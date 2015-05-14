@@ -157,6 +157,8 @@ function refpage(data){
 	d = d.getHours();
 	if (d < 6 || d > 21)
 		$('#style').attr("href","nightstyle.css");
+	else
+		$('#style').attr("href","style.css");
 	shiftslots();
 }
 </script>
