@@ -38,12 +38,11 @@ if (isset($url)){
 		$timetable[1] = process_rawstring($timetable[1], 2);
 	}
 	
-	for ($i = 0; $i < 2; $i++){
-		if (isset($timetable[$i]) && $timetable[$i] != "")
+	for ($i = 0; $i < 2; $i++)
+		if (!empty($timetable[$i]))
 			$timetable[$i] = sprintf("%02s", $timetable[$i]);
 		else
 			$timetable[$i] = "  ";
-	}
 
 	$timetable[0] = sprintf("%02s", $timetable[0]);
 	$timetable[1] = sprintf("%02s", $timetable[1]);
