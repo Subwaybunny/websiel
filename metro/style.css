@@ -56,7 +56,7 @@ hr {
 	left:0;
 	height:46px;
 	width:510px;
-	font-family:parisine;
+	font-family:typeface1;
 	font-size:2.5em;
 	text-align:center;
 	color:#7e7e7e;
@@ -76,7 +76,7 @@ hr {
 	position:absolute;
 	top:150px;
 	left:15px;
-	font-family:parisine;
+	font-family:typeface1;
 	color:#003f90;
 }
 #clock {
@@ -98,7 +98,7 @@ hr {
 .trains {
 	position:absolute;
 	top:105px;
-	font-family:parisine;
+	font-family:typeface1;
 	font-size:1.5em;
 	color:#444444;
 }
@@ -231,7 +231,7 @@ hr {
 	padding:0;
 	background:linear-gradient(white, #bebebe);
 	color:black;
-	font-family:parisine;
+	font-family:typeface1;
 	font-size:2em;
 	text-align:center;
 }
@@ -241,7 +241,7 @@ hr {
 	margin-top:-40px;
 	width:370px;
 	height:80px;
-	font-family:parisine;
+	font-family:typeface1;
 	font-size:1.5em;
 	text-align:center;
 	background:linear-gradient(#0000CC, #000066);
@@ -258,7 +258,7 @@ hr {
 	color:white;
 	height:40px;
 	width:175px;
-	font-family:parisine;
+	font-family:typeface1;
 	font-size:1.2em;
 }
 #userpanelcontainer {
