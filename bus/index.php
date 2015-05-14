@@ -172,7 +172,7 @@ WebSiel
 
 					<!-- FIN TEMPS D'ATTENTE -->
 <div id="bordereau">
-<div id="logo"><span style="font-family:Tahoma;">Web</br></span><span style="font-family:parisine;">&nbspsiel</span></div>
+<div id="logo"><span style="font-family:Tahoma;">Web</br></span><span style="font-family:typeface1;">&nbspsiel</span></div>
 <table id="slots"><tr>
 <td class="lineslot" id="currentline"></td>
 <td class="lineslot" style="margin-left:190px;"></td>
