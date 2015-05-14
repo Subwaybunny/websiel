@@ -104,9 +104,9 @@
 		else if (strlen($line) == 3 && $line[0] == '1')
 			switch ($line)
 		{
-			case "112":
 			case "103":
 			case "105":
+			case "112":
 			case "127":
 			case "137":
 			case "139":
@@ -314,7 +314,7 @@
 			break;
 		}
 		
-				else if (strlen($line) == 3 && $line[0] == '3')
+		else if (strlen($line) == 3 && $line[0] == '3')
 			switch ($line)
 		{
 			case "312":
