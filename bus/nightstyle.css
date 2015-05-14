@@ -1,12 +1,12 @@
 @font-face
 {
 	font-family:typeface1;
-	src:url(../66/typeface1.otf);
+	src:url(../typeface1.otf);
 }
 @font-face
 {
 	font-family:typeface2;
-	src:url(../66/typeface2.ttf);
+	src:url(../typeface2.ttf);
 }
 body{
 background-color:black;
